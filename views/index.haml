@@ -1,4 +1,11 @@
 
 #home
-  %h1 Wahey!
+  %h1 CSV to Popolo
   %p This is a simple demo site for converting CSV to Popolo
+  %p Upload a CSV file, and we'll give you back Popolo-format JSON:
+  %form{ :action => "/convert", :method => "post", :enctype=>"multipart/form-data"}
+    %fieldset
+      %label{:for => "file"} File:
+      %input{:type => "file", :name => "csv"}
+    %input{:type => "submit", :value => "Send", :class => "button"}
+    
