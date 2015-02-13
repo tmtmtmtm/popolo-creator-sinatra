@@ -13,8 +13,12 @@ get '/' do
 end
 
 post '/convert' do
-  file = params[:csv][:tempfile] or error { "Didn't get a file" }
   content_type :json
+  begin
+    file = params[:csv][:tempfile] 
+  rescue 
+    raise "No file submitted"
+  end
   JSON.pretty_generate(Popolo::CSV.from_file(file).data)
 end
 
