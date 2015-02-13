@@ -1,12 +1,7 @@
 require 'sinatra'
 require 'haml'
 require 'json'
-require 'colorize'
 require 'csv_to_popolo'
-
-#---------------------------------------------------------------------
-# Static pages
-#---------------------------------------------------------------------
 
 get '/' do
   haml :index
