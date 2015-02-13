@@ -1,0 +1,40 @@
+GIT
+  remote: git://github.com/tmtmtmtm/csv_to_popolo.git
+  revision: b0a630b7a69fa9d2f8950d44c522128ce21f4c85
+  specs:
+    csv_to_popolo (0.1.0)
+      json
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    colorize (0.6.0)
+    daemons (1.1.9)
+    eventmachine (1.0.3)
+    haml (4.0.5)
+      tilt
+    json (1.8.1)
+    open-uri-cached (0.0.5)
+    rack (1.5.2)
+    redcarpet (2.3.0)
+    sinatra (1.1.0)
+      rack (~> 1.1)
+      tilt (~> 1.1)
+    thin (1.6.2)
+      daemons (>= 1.0.9)
+      eventmachine (>= 1.0.0)
+      rack (>= 1.0.0)
+    tilt (1.4.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  colorize
+  csv_to_popolo!
+  haml
+  json
+  open-uri-cached
+  redcarpet
+  sinatra (= 1.1.0)
+  thin
