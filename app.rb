@@ -2,14 +2,14 @@ require 'sinatra'
 require 'haml'
 require 'json'
 require 'csv_to_popolo'
-require 'sinatra/cross_origin'
+require 'rack/cors'
 
-configure do
-  enable :cross_origin
+use Rack::Cors do
+  allow do
+    origins '*'
+    resource '*'
+  end
 end
-
-set :allow_methods, [:get, :post, :options]
-
 
 get '/' do
   haml :index

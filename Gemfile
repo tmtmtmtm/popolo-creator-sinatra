@@ -7,6 +7,6 @@ gem 'thin'
 gem 'redcarpet'
 gem 'open-uri-cached'
 gem 'colorize'
-gem "sinatra-cross_origin", "~> 0.3.1"
+gem 'rack-cors', :require => 'rack/cors'
 gem 'csv_to_popolo', '>=0.4.0', :github => 'tmtmtmtm/csv_to_popolo'
 
