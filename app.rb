@@ -7,7 +7,7 @@ require 'rack/cors'
 use Rack::Cors do
   allow do
     origins '*'
-    resource '*'
+    resource '/convert', :headers => :any, :methods => :post
   end
 end
 
