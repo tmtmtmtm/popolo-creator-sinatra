@@ -8,6 +8,9 @@ configure do
   enable :cross_origin
 end
 
+set :allow_methods, [:get, :post, :options]
+
+
 get '/' do
   haml :index
 end
