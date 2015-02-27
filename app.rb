@@ -22,7 +22,7 @@ post '/convert' do
   rescue 
     raise "No file submitted"
   end
-  JSON.pretty_generate(Popolo::CSV.from_file(file).data)
+  JSON.pretty_generate(Popolo::CSV.new(file).data)
 end
 
 helpers do
