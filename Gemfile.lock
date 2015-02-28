@@ -34,7 +34,7 @@ PLATFORMS
 
 DEPENDENCIES
   colorize
-  csv_to_popolo (>= 0.6.2)!
+  csv_to_popolo (>= 0.6.3)!
   haml
   json
   open-uri-cached

@@ -24,7 +24,7 @@ post '/convert' do
   rescue 
     raise "No file submitted"
   end
-  logger.info "---CSV--- #{File.foreach(file).first(6)} ---END---"
+  logger.info "---CSV--- #{params[:csv][:filename]} = #{File.foreach(file).first(6)} ---END---"
   JSON.pretty_generate(Popolo::CSV.new(file).data)
 end
 
