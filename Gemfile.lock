@@ -15,9 +15,6 @@ GEM
     haml (4.0.6)
       tilt
     json (1.8.2)
-    mail (2.6.3)
-      mime-types (>= 1.16, < 3)
-    mime-types (2.4.3)
     open-uri-cached (0.0.5)
     rack (1.6.0)
     rack-cors (0.3.1)
@@ -40,7 +37,6 @@ DEPENDENCIES
   csv_to_popolo (>= 0.6.2)!
   haml
   json
-  mail
   open-uri-cached
   rack-cors
   redcarpet
