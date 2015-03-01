@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/tmtmtmtm/csv_to_popolo.git
-  revision: 36f202c4d261ec68a3f63d3ef28fb0e0f744fa66
+  revision: 4187a1a6f3ccc7bd422408fd0db683a6736b5101
   specs:
-    csv_to_popolo (0.6.4)
+    csv_to_popolo (0.6.5)
       json
       smarter_csv
 
