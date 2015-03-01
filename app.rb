@@ -25,7 +25,13 @@ post '/convert' do
     raise "No file submitted"
   end
   logger.info "---CSV--- #{params[:csv][:filename]} = #{File.foreach(file).first(6)} ---END---"
-  JSON.pretty_generate(Popolo::CSV.new(file).data)
+  begin
+    json = Popolo::CSV.new(file).data
+  rescue => e
+    json = { error: { type: e.class, message: e } }
+    logger.warn e.to_s.split(/\n/).first
+  end
+  JSON.pretty_generate(json)
 end
 
 # Can't use built-in until 1.3
