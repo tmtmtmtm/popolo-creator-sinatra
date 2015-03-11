@@ -8,5 +8,5 @@ gem 'redcarpet'
 gem 'open-uri-cached'
 gem 'colorize'
 gem 'rack-cors', :require => 'rack/cors'
-gem 'csv_to_popolo', '>=0.6.10', :github => 'tmtmtmtm/csv_to_popolo'
+gem 'csv_to_popolo', '>=0.6.11', :github => 'tmtmtmtm/csv_to_popolo'
 
