@@ -1,15 +1,15 @@
 GIT
   remote: git://github.com/tmtmtmtm/csv_to_popolo.git
-  revision: 95e9bf019b7152c22f3c1c7328845b108ac45c18
+  revision: e3e7683d571cbb823ab849f85f61f10d3cc9aea5
   specs:
-    csv_to_popolo (0.7.3)
+    csv_to_popolo (0.7.4)
       json
 
 GEM
   remote: https://rubygems.org/
   specs:
     colorize (0.7.5)
-    daemons (1.2.1)
+    daemons (1.2.2)
     eventmachine (1.0.7)
     haml (4.0.6)
       tilt
@@ -32,7 +32,7 @@ PLATFORMS
 
 DEPENDENCIES
   colorize
-  csv_to_popolo (>= 0.7.3)!
+  csv_to_popolo (>= 0.7.4)!
   haml
   json
   open-uri-cached
