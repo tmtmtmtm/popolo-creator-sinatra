@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/tmtmtmtm/csv_to_popolo.git
-  revision: 54c000b4fbb9b2962e8d3f18ceeaf464ce087b49
+  revision: 4427353b3216aed59a9cbabc2084e7c00250f0f7
   specs:
-    csv_to_popolo (0.8.4)
+    csv_to_popolo (0.9.3)
       json
 
 GEM
@@ -15,7 +15,7 @@ GEM
       tilt
     json (1.8.2)
     open-uri-cached (0.0.5)
-    rack (1.6.0)
+    rack (1.6.1)
     rack-cors (0.4.0)
     redcarpet (3.2.3)
     sinatra (1.1.0)
@@ -32,7 +32,7 @@ PLATFORMS
 
 DEPENDENCIES
   colorize
-  csv_to_popolo (>= 0.8.4)!
+  csv_to_popolo (>= 0.9.3)!
   haml
   json
   open-uri-cached
