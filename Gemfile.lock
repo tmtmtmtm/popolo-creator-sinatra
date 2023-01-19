@@ -1,9 +1,12 @@
 GIT
-  remote: git://github.com/tmtmtmtm/csv_to_popolo.git
-  revision: 4427353b3216aed59a9cbabc2084e7c00250f0f7
+  remote: https://github.com/tmtmtmtm/csv_to_popolo.git
+  revision: 257f65f516120f29b24c79f8df7058ce80c05252
   specs:
-    csv_to_popolo (0.9.3)
+    csv_to_popolo (0.31.0)
+      facebook_username_extractor
       json
+      rcsv
+      twitter_username_extractor
 
 GEM
   remote: https://rubygems.org/
@@ -11,12 +14,14 @@ GEM
     colorize (0.7.7)
     daemons (1.2.2)
     eventmachine (1.0.7)
+    facebook_username_extractor (0.2.0)
     haml (4.0.6)
       tilt
     json (1.8.2)
     open-uri-cached (0.0.5)
-    rack (1.6.1)
+    rack (1.6.13)
     rack-cors (0.4.0)
+    rcsv (0.3.1)
     redcarpet (3.2.3)
     sinatra (1.1.0)
       rack (~> 1.1)
@@ -26,6 +31,7 @@ GEM
       eventmachine (~> 1.0)
       rack (~> 1.0)
     tilt (1.4.1)
+    twitter_username_extractor (0.2.0)
 
 PLATFORMS
   ruby
